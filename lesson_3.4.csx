@@ -1,0 +1,10 @@
+int a;
+int b;
+a = 2;
+b = 3;
+bool aBiggerB;
+aBiggerB = a > b;
+Console.WriteLine(a + " > " + b + " is " + aBiggerB);
+a = 4;
+aBiggerB = a > b;
+Console.WriteLine(a + " > " + b + " is " + aBiggerB);
