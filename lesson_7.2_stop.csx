@@ -1,5 +1,6 @@
-// wie man sieht kann man das Programm mit dem aktuellen Ansatz nicht wieder läuffähig machen, denn es fehlt Zugriff auf die Objekt-Variablen
-// im nächsten Schritt stellen wir den Zugriff wieder her
+// as you can see, the program is not yet executable with the new approach
+// the reason is that access to the now private variables is missing
+// our next step is to reestablish this access
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");

@@ -1,8 +1,3 @@
-// das Ziel dieser Datei ist zu zeigen, wie umständlich, unübersichtlich und fehleranfällig es ist, mit mehreren Objekten auf diese Weise zu arbeiten
-// als erste Verbesserung werden wir die Berechnungen von Fläche, Umfang und ob das Rechteck ein Quadrat ist in Methoden auslagern.
-// unten ist dies am Beispiel von Umfang geschehen; zur weiteren Vereinfachung wurden die Umfangsvariablen entfernt und bei der Ausgabe direkt die neue Umfangsmethode aufgerufen
-// Aufgabe: ändere den Code entsprechend für die anderen beiden berechneten Werte
-
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
     Console.WriteLine("The surface of rectangle " + name + " is " + surface + ".");

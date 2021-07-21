@@ -1,16 +1,18 @@
-// man könnte den Zugriff auf die privaten Objekt-Variablen mit Hilfe von öffentlichen Methoden herstellen
-// aber für genau diesen Zweck gibt es einen besonderen Ansatz, die sogenannten Object-Properties
-// siehe https://www.w3schools.com/cs/cs_properties.asp
-// diese ermöglichen es unter anderem dafür zu sorgen, dass den Objekt-Variablen keine unerwünschten Werte zugewiesen werden
-// Object Properties heißen genauso wie die entsprechenden Variablen, werden aber groß geschrieben
-// diese Objekteigenschaften sind wie eine Kombination aus einer Variable und drei festgelegten Zugriffsmethoden
-// nämlich get, set und init
-// die Zugriffsmethoden können, müssen aber nicht definiert werden
-// durch Weglassen der get-Zugriffsmethode kann man z.B. Schreibzugriff verhindern
-// Aufgaben:
-// 1) füge der Klasse zwei Eigenschaften EdgeA und EdgeB hinzu
-// 2) definiere jeweils nur die get-Methode für diese Eigenschaften
-// 3) passe den Rest des Programms ensprechend an
+// you could establish access to the private object variables through private methods
+// but there is a special approach in c# exactly for the job of access to private variables
+// this approach is called "properties", see https://www.w3schools.com/cs/cs_properties.asp
+
+// one benefit of the properties approach is to enable us to prevent assigning unwanted values to variables
+// here is some info on properties:
+// a property is typically declared for a given private variable
+// the property has the same name as the variable except that it starts with a capital letter
+// properties are a combination of a variable and three predefined access methods called get, set and init
+// the access methods can but do not need to be defined
+// for instance, by not defining a set method one can prevent write access to the variable
+// tasks:
+// 1) add two properties EdgeA and EdgeB to the class
+// 2) define only the get methods for these properties
+// 3) modify the rest of the program
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");

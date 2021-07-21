@@ -1,15 +1,18 @@
-// bisher werden den öffentlichen Variablen der Objekte nach der Erstellung der Objekte von außen Werte zugewiesen
-// besser ist es diese Variablen zu verbergen und ihre Werte mit Hilfe einer besonderen zusätzlichen Methode zu setzen
-// verbergen kann man Variablen mit dem Access Modifier "private"
-// die besondere Methode zum Setzen der Variablen nennt man einen Konstruktur
-// im Gegensatz zu einer normalen Methode werden Konstruktoren ohne Typ für einen Rückgabewert definiert
-// Konstruktoren heißen genauso wie ihre Klasse
-// Konstruktoren können Parameter haben; 
-// eine Klasse kann mehrere Konstruktoren haben
-// Aufgaben:
-//   1) verberge die Variablen der Klasse 
-//   2) erstelle einen Konstruktor, um die Variablen zu setzen
-//   3) passe den Rest des Programms entsprechend an
+// so far we have directly assigned values to public variables of Rectangle objects
+// that approach is often not ideal, so let's look at a better one
+// let's make the variables private and use a special, additional method to assign values to them
+// to make the variables private, you start the declaration with the Access Modifier "private"
+// the special method for setting the variables is called a constructor
+// it is called a constructor because it can be used to create a new object and initialize its values
+// here are key points about constructors:
+// in contrast to normal methods constructors are declared without a return type
+// constructors are called exactly like their class
+// constructors can have parameters
+// a class can have several constructors
+// tasks:
+// 1) hide the variables of the class
+// 2) create a constructor to set all variables of the class
+// 3) modify the rest of the program as necessary
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");

@@ -1,4 +1,4 @@
-// der letzte Schrit besteht darin, die Methoden zur Berechnung der Rechteckeigenschaften in die Klasse hineinzuziehen
+// the last step consists in moving the methods for calculating the rectangle properties into the class
 
 float circumference (float a, float b) {
     return 2 * (a + b);

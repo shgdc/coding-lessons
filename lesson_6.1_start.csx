@@ -1,7 +1,12 @@
-// das Ziel dieser Datei ist zu zeigen, wie umständlich, unübersichtlich und fehleranfällig es ist, mit mehreren Objekten auf diese Weise zu arbeiten
-// als erste Verbesserung werden wir die Berechnungen von Fläche, Umfang und ob das Rechteck ein Quadrat ist in Methoden auslagern.
-// unten ist dies am Beispiel von Umfang geschehen; zur weiteren Vereinfachung wurden die Umfangsvariablen entfernt und bei der Ausgabe direkt die neue Umfangsmethode aufgerufen
-// Aufgabe: ändere den Code entsprechend für die anderen beiden berechneten Werte
+// the goal of this file is to illustrate a particular problem
+// namely how cumbersome, confusing and error-prone it is to work with multiple objects in this way
+// as a first improvement we'll do the following:
+// we will move the calculations of surface etc. into methods
+// below this has been done for Circumference
+// two more steps simplify things further:
+// 1) the variables for circumference have been removed
+// 2) the output calls the Circumference method
+// task: modify the code in the same way for surface and isSquare
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
@@ -9,8 +14,7 @@ void Output(string name, float edgeA, float edgeB, float surface, float circumfe
     Console.WriteLine("The circumference of rectangle " + name + " is " + circumference + ".");
     Console.WriteLine("Rectangle " + name + " is " + (!isSquare?"not ":"")+ "a square.");
 }
-
-float circumference (float a, float b) {
+float Circumference (float a, float b) {
     return 2 * (a + b);
 }
 
@@ -39,5 +43,5 @@ r2_edgeB = 9.25f;
 r2_surface = r2_edgeA * r2_edgeB;
 r2_isSquare = r2_edgeA == r2_edgeB;
 
-Output("R1", r1_edgeA, r1_edgeB, r1_surface, circumference(r1_edgeA,r1_edgeB), r1_isSquare);
-Output("R2", r2_edgeA, r2_edgeB, r2_surface, circumference(r2_edgeA,r2_edgeB), r2_isSquare);
+Output("R1", r1_edgeA, r1_edgeB, r1_surface, Circumference(r1_edgeA,r1_edgeB), r1_isSquare);
+Output("R2", r2_edgeA, r2_edgeB, r2_surface, Circumference(r2_edgeA,r2_edgeB), r2_isSquare);
