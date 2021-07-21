@@ -1,9 +1,3 @@
-// beachtenswert ist, dass bei der Ausgabe z.B. die Oberfläche über die Eigenschaften Surface ermittelt wird, also groß geschrieben und ohne Klammern
-// der Umfang hingegen wird über die Methode circumference() abgefragt, also klein geschrieben und mit Klammern
-// der entscheidende Punkt ist, dass nun alle Daten und alles Verhalten des Rechtecks in der Klasse definiert sind.
-// diese Definition des Rechtecks kann jetzt insb. in eine andere Datei verschoben werden, wodurch das Hauptprogram sehr viel übersichtlicher wird
-// außerdem unterstützt der Editor die Verwendung der Klasse, indem nach dem Tippen des Punktes nach einem Objektnamen die vorhanden öffentlichen Variablen, Eigenschaten und Methoden angezeigt werden.
-
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
     Console.WriteLine("The surface of rectangle " + name + " is " + surface + ".");

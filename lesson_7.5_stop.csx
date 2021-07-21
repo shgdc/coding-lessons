@@ -1,8 +1,7 @@
-// beachtenswert ist, dass bei der Ausgabe z.B. die Oberfläche über die Eigenschaften Surface ermittelt wird, also groß geschrieben und ohne Klammern
-// der Umfang hingegen wird über die Methode circumference() abgefragt, also klein geschrieben und mit Klammern
-// der entscheidende Punkt ist, dass nun alle Daten und alles Verhalten des Rechtecks in der Klasse definiert sind.
-// diese Definition des Rechtecks kann jetzt insb. in eine andere Datei verschoben werden, wodurch das Hauptprogram sehr viel übersichtlicher wird
-// außerdem unterstützt der Editor die Verwendung der Klasse, indem nach dem Tippen des Punktes nach einem Objektnamen die vorhanden öffentlichen Variablen, Eigenschaten und Methoden angezeigt werden.
+// the key point of this program is that all data and behavior is now defined in the class Rectangle
+// the editor supports us in using the class by auto-completing all public fields and methods
+// for that we just need to write the name of an object followed by a point
+// the definition of the Rectangle class can be moved to another file to further simplify the current file
 
 class Rectangle {
     string name;

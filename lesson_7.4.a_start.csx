@@ -44,8 +44,6 @@ class Rectangle {
     }
 }
 
-
-
 Rectangle r1 = new Rectangle("R1", 12.5f,12.5f);
 Rectangle r2 = new Rectangle("R2", 12.5f, 9.25f);
 
