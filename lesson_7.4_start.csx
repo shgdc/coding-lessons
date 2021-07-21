@@ -1,11 +1,12 @@
-// der letzte Schrit besteht darin, die Methoden zur Berechnung der Rechteckeigenschaften in die Klasse hineinzuziehen
-// da die Methoden dann Zugriff auf die privaten Variablen der Objekte haben, könnte man die Parameter entfernen
-// auf diese Weise könnte man die Methoden dann auf dem Objekt aufrufen, ohne das man Argumente angeben müsste
-// nennen wir das obige Vorgehen Ansatz a
-// alternativ kann man für Berechnungen, die nur mit Daten des Objektes arbeiten auch weitere Eigenschaften definieren;
-// in den get-Methoden dieser Eigenschaften kann man dann die Berechnungen durchführen
-// und zwar entweder durch den Aufruf privater Methoden (Ansatz b) oder direkt (Ansatz c)
-// Aufgabe: setze die drei Ansätze in den entsprechend benannten Dateien um
+// the last step is to pull the methods for calculating the rectangle properties into the class
+// since the methods then have access to the private variables, we could remove the parameters
+// this way one could call the methods on the object without having to provide arguments
+// let's call this approach a
+// alternatively one can define additional properties:
+// in the get methods of this properties one can carry out the calculations in one of two ways
+// approach b: by calling private methods that do the actual calculations
+// approach c: by doing the calculations directly in the property methods
+// task: implement the three approaches in the respective files
 
 float circumference (float a, float b) {
     return 2 * (a + b);
