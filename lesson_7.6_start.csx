@@ -1,6 +1,6 @@
 // tasks
-// - create a new file called rectangles.csx and move the definition of class Rectangle into it
-// - load the file rectangles.csx into the current file by adding: #load "rectangle.csx"
+// - create a new file called rectangle.csx and move the definition of class Rectangle into it
+// - load the file rectangle.csx into the current file by adding: #load "rectangle.csx"
 
 class Rectangle {
     string name;
